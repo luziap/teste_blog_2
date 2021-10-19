@@ -1,5 +1,5 @@
 ---
-action_label: Read More &rarr;
+action_label: Continua &rarr;
 action_link: /about
 action_type: text
 description: 
