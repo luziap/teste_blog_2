@@ -9,8 +9,8 @@ publishDate: "2021-01-22"
 show_author_byline: false
 show_post_date: false
 show_post_thumbnail: true
-subtitle: Gerando gráficos com R e RStudio - excelência na análise de dados
-title: OFICINA
+subtitle: Parte da programação do Mês de Ciência e Tecnologia do ICT-UNIFESP 2021
+title: OFICINA - Gerando gráficos com R e RStudio - excelência na análise de dados 
 weight: 2
 ---
 
