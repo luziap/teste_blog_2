@@ -1,16 +1,16 @@
 ---
-title: "OFICINA: Gerando gráficos com R e RStudio: excelência na análise"
+title: "OFICINA"
 # list or single layouts are possible
 layout: single-series # list, list-sidebar, single-series
 show_post_thumbnail: true
 weight: 2
 publishDate: 2021-01-22
 date: 2021-01-25
-subtitle: "Uma das ações do Mês de Ciência e Tecnologia do ICT-UNIFESP"
+subtitle: "Gerando gráficos com R e RStudio: excelência na análise de dados"
 description: |
-  Our first day together is all about building and publishing.
+  Uma das ações do Mês de Ciência e Tecnologia do ICT-UNIFESP
 excerpt: 
-author: Alison Hill
+author: Luzia Pedroso de Oliveira
 show_post_thumbnail: true
 show_author_byline: false
 show_post_date: false
