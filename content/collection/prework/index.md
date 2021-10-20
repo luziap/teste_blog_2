@@ -116,7 +116,7 @@ A planilha de um formulário do Google (Google Forms) pode ser salva em xlsx ou 
 Para isso clicar no botão criar planilha na aba respostas do formulário google a ser importado como exemplificado abaixo.
 
 
-![Captura de tela das respostas do formulário Google.](images/figura1.png)
+![Captura de tela das respostas do formulário Google.](figura1.jpg)
 
 
 
@@ -124,45 +124,42 @@ Para isso clicar no botão criar planilha na aba respostas do formulário google
 
 ###### (1) ``xlsx``
 
-![Para fazer o download das respostas do formulário Google para xlsx.](images/figura2.png)
-\hfill\break
-
-\hfill\break
+![Para fazer o download das respostas do formulário Google para xlsx.](figura2.jpg)
 
 ###### (2) ``csv``
 
-![Para fazer o download das respostas do formulário Google para csv.](images/figura2b.png)
+![Para fazer o download das respostas do formulário Google para csv.](figura2b.jpg)
 
-###### Passo 3: Renomear o arquivo. Não pode haver acentos. 
+##### Passo 3: Renomear o arquivo. Não pode haver acentos. 
 
 Neste exemplo os arquivos foram salvos com nomes *respostas.xlsx* e *respostas.csv*.
 
 
-###### Passo 4: Importação no R (RStudio)
+##### Passo 4: Importação no R (RStudio)
 
 ##### <span style="color:orange">**4.1 Importação arquivo ``xlsx``**</span>
 
-###### Passo 1: Clicar em ``Import Dataset`` e selecionar ``From Excel``.
+##### Passo 1: Clicar em ``Import Dataset`` e selecionar ``From Excel``.
 
-![Para importar a planilha de respostas salva em xlsx.](images/figura3.png)
+![Para importar a planilha de respostas salva em xlsx.](figura3.jpg)
 
 
 
-###### Passo 2: Clicar em ``Browse`` para localizar o arquivo e depois em ``Import``.
+##### Passo 2: Clicar em ``Browse`` para localizar o arquivo e depois em ``Import``.
 
-![Para importar a planilha de respostas salva em xlsx.](images/figura4.png)
+![Para importar a planilha de respostas salva em xlsx.](figura4.jpg)
 
 
 
 ###### O R armazena a planilha importada em um ``data.frame`` com mesmo nome do arquivo importado, neste caso ``resposta``. 
 
 
-![Para visualizar a planilha de respostas e o código R gerado para importação.](images/figura5.png)
+![Para visualizar a planilha de respostas e o código R gerado para importação.](figura5.jpg)
 
 
 ###### Há também a opção de digitar as linhas de comando abaixo para importar uma planilha ``xlsx`` usando o pacote ``readxl``:
 
-```
+```r
 library(readxl)
 respostas <- read_excel("Caminho_Arquivo")
 View(respostas)
@@ -171,19 +168,19 @@ View(respostas)
 ##### <span style="color:orange">**4.2 Importação arquivo ``csv``**</span>
 
 
-![Planilha com as respostas do formulário Google salva em csv aberta no excel.](images/figura6.png)
+![Planilha com as respostas do formulário Google salva em csv aberta no excel.](figura6.jpg)
 
 
 
 
-###### Passo 1: Clicar em ``Import Dataset`` e selecionar ``From Text (readr)``.
+##### Passo 1: Clicar em ``Import Dataset`` e selecionar ``From Text (readr)``.
 
-![Para importar a planilha de respostas salva em csv. ](images/figura3b.png)
+![Para importar a planilha de respostas salva em csv. ](figura3b.jpg)
 
 
-###### Passo 2: Prosseguir como no caso de arquivo xlsx. 
+##### Passo 2: Prosseguir como no caso de arquivo xlsx. 
 
-###### As linhas de comandos para importação de arquivo ``csv`` usando o pacote ``readr``:
+##### As linhas de comandos para importação de arquivo ``csv`` usando o pacote ``readr``:
 
 ```r
 library(readr)
