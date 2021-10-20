@@ -62,7 +62,7 @@ Uma forma para carregar os pacotes:
 
 ## Para entrada de dados no R 
 
-#### Leitura de dados digitados
+#### Digitando os dados
 
 
 Algumas vezes quando se tem poucos dados pode ser conveniente digitá-los. Os exemplos a seguir ilustram a entrada de dados de variáveis qualitativa e quantitativa. Os exemplos utilizados são do livro de Anderson, David R.
