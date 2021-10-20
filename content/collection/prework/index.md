@@ -22,7 +22,7 @@ Caso surjam dúvidas durante a instalação vocês podem consultar, por exemplo,
 
 Escolha as versões mais atualizadas. 
 
-## Configurar o RStudio Cloud
+## Para configurar o RStudio Cloud
 
 Também é possível usar o R na nuvem, o que requer uma conexão com a internet. 
 
@@ -49,7 +49,7 @@ Para rodar uma linha de comando devemos colocar o cursor em algum lugar da linha
 
 Uma forma para carregar os pacotes:
 
-+ copiar e colar as linhas de comandos a seguir no editor do RStudio 
++ usar o comando require  
 
     ```r
     require(summarytools)
@@ -60,9 +60,9 @@ Uma forma para carregar os pacotes:
 
     ```
 
-## Para entrada de dados no R 
+## Para entrar com os dados no R 
 
-#### Digitando os dados
++ #### Digitando 
 
 
 Algumas vezes quando se tem poucos dados pode ser conveniente digitá-los. Os exemplos a seguir ilustram a entrada de dados de variáveis qualitativa e quantitativa. Os exemplos utilizados são do livro de Anderson, David R.
@@ -104,3 +104,100 @@ x;y # para visualizar os dados
 ```
 
 
+
+
++ #### Importando uma planilha de respostas, por exemplo, de um formulário Google
+
+A planilha de um formulário do Google (Google Forms) pode ser salva em xlsx ou csv. Neste tutorial são apresentadas algumas alternativas para a leitura dos dados levando em conta por exemplo a acentuação e outros caracteres especiais. 
+
+
+##### Passo 1: Realizar o download da planilha
+
+Para isso clicar no botão criar planilha na aba respostas do formulário google a ser importado como exemplificado abaixo.
+
+
+![Captura de tela das respostas do formulário Google.](images/figura1.png)
+
+
+
+##### Passo 2: Escolher a extensão para salvar o arquivo ``xlsx`` (1) ou ``csv`` (2). 
+
+###### (1) ``xlsx``
+
+![Para fazer o download das respostas do formulário Google para xlsx.](images/figura2.png)
+\hfill\break
+
+\hfill\break
+
+###### (2) ``csv``
+
+![Para fazer o download das respostas do formulário Google para csv.](images/figura2b.png)
+
+###### Passo 3: Renomear o arquivo. Não pode haver acentos. 
+
+Neste exemplo os arquivos foram salvos com nomes *respostas.xlsx* e *respostas.csv*.
+
+
+###### Passo 4: Importação no R (RStudio)
+
+##### <span style="color:orange">**4.1 Importação arquivo ``xlsx``**</span>
+
+###### Passo 1: Clicar em ``Import Dataset`` e selecionar ``From Excel``.
+
+![Para importar a planilha de respostas salva em xlsx.](images/figura3.png)
+
+
+
+###### Passo 2: Clicar em ``Browse`` para localizar o arquivo e depois em ``Import``.
+
+![Para importar a planilha de respostas salva em xlsx.](images/figura4.png)
+
+
+
+###### O R armazena a planilha importada em um ``data.frame`` com mesmo nome do arquivo importado, neste caso ``resposta``. 
+
+
+![Para visualizar a planilha de respostas e o código R gerado para importação.](images/figura5.png)
+
+
+###### Há também a opção de digitar as linhas de comando abaixo para importar uma planilha ``xlsx`` usando o pacote ``readxl``:
+
+```
+library(readxl)
+respostas <- read_excel("Caminho_Arquivo")
+View(respostas)
+```
+
+##### <span style="color:orange">**4.2 Importação arquivo ``csv``**</span>
+
+
+![Planilha com as respostas do formulário Google salva em csv aberta no excel.](images/figura6.png)
+
+
+
+
+###### Passo 1: Clicar em ``Import Dataset`` e selecionar ``From Text (readr)``.
+
+![Para importar a planilha de respostas salva em csv. ](images/figura3b.png)
+
+
+###### Passo 2: Prosseguir como no caso de arquivo xlsx. 
+
+###### As linhas de comandos para importação de arquivo ``csv`` usando o pacote ``readr``:
+
+```r
+library(readr)
+respostas <- read_csv("Caminho_Arquivo")
+View(respostas)
+```
+###### Uma forma alternativa para ler corretamente (considerando os acentos, etc...) os dados de um arquivo ``csv`` é fazer inicialmente o download do arquivo como ``xslx``  e depois usar o excel para salvá-lo como ``csv``. Dessa forma, o pacote básico do R pode ser usado.
+
+```r
+respostas <- read.csv("Caminho_Arquivo")
+respostas
+```
+
+###### <span style="color:blue">Pode ser que seja necessário trocar read.csv por read.csv2 dependendo da versão do excel.</span>
+
+
+###### **OBSERVAÇÃO:** Para que o R acesse o arquivo sem precisar especificar o caminho "C:/Pasta1/Subpasta1/Nome_Arquivo", ou seja, usando apenas o nome, basta salvar o código do R e o arquivo csv numa mesma pasta. 
