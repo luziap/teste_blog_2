@@ -3,69 +3,104 @@ date: "2021-01-01"
 draft: false
 excerpt: How to prepare ahead of time.
 subtitle: ""
-title: Prework
+title: Introdução ao R
 weight: 1
 ---
+Todas as análises de dados estão sendo realizadas usando o R e o RStudio. 
 
-Welcome to the [Introducing Yourself Online](/) workshop! We look forward to meeting you. Before attending the workshop, please complete the following prework.
+O R é um software livre e de código aberto com uma imensa comunidade de desenvolvedores e usuários nacionais e internacionais e cresce muito rapidamente. Dessa forma, há muito material disponível com exemplos em R. Assim sendo, com pequenas modificações em códigos prontos disponíveis é possível, por exemplo, realizar análises gráficas, ajustar modelos de previsão, criar aplicativos web, sites e muito mais. 
+O RStudio é uma plataforma integrada ao R e oferece vários recursos que facilitam a importação, a edição dos comandos e a visualização dos resultados obtidos. 
 
-## Set up RStudio Cloud
+O R e o RStudio são compatíveis com Windows, linux e mac. 
 
-Sign up for a free RStudio Cloud account at https://rstudio.cloud/ before the workshop. I recommend logging in with an existing Google or GitHub account, if you have one (rather than creating a new account with another password you have to remember). I want you to be able to work from your own laptop in this workshop, but Cloud is an important back-up plan should you run into troubles.
 
-## Set up GitHub
+## Para instalar o R e o RStudio
 
-We will be using GitHub in this workshop for version control and publishing. Sign up for a free GitHub.com account at <https://github.com/join> if you don't already have one. Also:
+A instação do R e do RStudio pode ser realizada, respectivamente, pelos links https://cran.r-project.org/ e https://rstudio.com/products/rstudio/download/. 
 
-+ Complete these [installation instructions](https://happygitwithr.com/install-intro.html).
-    
-+ Test your connection between GitHub and RStudio following [these steps](https://happygitwithr.com/connect-intro.html). 
-    
-+ **NOTE:** We *strongly recommend* that if you are not already a fluent GitHub user you choose [HTTPS over SSH](https://happygitwithr.com/credential-caching.html).
+Caso surjam dúvidas durante a instalação vocês podem consultar, por exemplo, o roteiro para instalação do R e RStudio que preparei disponível neste [link]( https://drive.google.com/file/d/1J7MjR0CXjNwk_wYcpx9RElHoKTxToWgV/view?usp=sharing). Entretanto, esse roteiro foi feito para que utiliza o sistema operacional Windows.
 
-## Brush up on markdown
+Escolha as versões mais atualizadas. 
 
-Please complete this [10-minute interactive tutorial on Markdown](https://commonmark.org/help/tutorial/). 
+## Configurar o RStudio Cloud
 
-## Installations
+Também é possível usar o R na nuvem, o que requer uma conexão com a internet. 
 
-Please bring a laptop that has the following installed:
+O RStudio Cloud pode ser acessado pelo link https://rstudio.cloud, sendo necessário criar uma conta no RStudio Cloud. Recomenda-se efetuar o login usando a sua conta Google para não ser necessário guardar uma nova senha.
 
-+ A recent version of R (>=3.6.0), which is available for free at https://cloud.r-project.org/
-    
-+ A recent version of RStudio Desktop (>=1.4), available for free ([RStudio Desktop Open Source License](https://www.rstudio.com/products/rstudio/download/#download)). Read up on the latest version [here](https://blog.rstudio.com/2021/01/19/announcing-rstudio-1-4/).
-    
-+ The R packages we will use, which you can install by connecting to the internet, opening RStudio, and running at the command line:
+Dê preferência para a instalação desses softwares em seu PC, pois poderá haver algumas incompatibilidades.
+
+
+## Para instalar e carregar os pacotes no R
+
+O R constituído por pacotes (packages) ou bibliotecas que são instaladas de acordo com a necessidade. Os pacotes ficam disponíveis no repositório do CRAN e todos são documentados.
+
+Neste exemplo, estamos considerando os pacotes necessários para obter os gráficos do tutorial disponibilizado na OFICINA: Gerando gráficos com R e RStudio - excelência na análise de dados.
+
+Uma forma para instalar os pacotes:
+
++ estando conectado a internet, copiar e colar a linha de comandos a seguir no editor do RStudio 
 
     ```r
-    > install.packages(c("usethis", "remotes", "distill", 
-                       "postcards", "blogdown"))
+    install.packages(c("summarytools", "fdth", "ggplot2", 
+                       "readxl", "readr"))
     ```
-    
-    You'll also need to install the development version of the `rmarkdown` package:
-    
+Para rodar uma linha de comando devemos colocar o cursor em algum lugar da linha e clicar em **Run** no Menu superior no editor do RStudio.
+
+Uma forma para carregar os pacotes:
+
++ copiar e colar as linhas de comandos a seguir no editor do RStudio 
+
     ```r
-    > remotes::install_github("rmarkdown")
+    require(summarytools)
+    require(fdth)
+    require(ggplot2)
+    require(readxl)
+    require(readr)
+
     ```
 
-## Install Hugo
+## Para entrada de dados no R 
 
-To use blogdown, please install Hugo:
-```r
-> blogdown::install_hugo()
+#### Leitura de dados digitados
+
+
+Algumas vezes quando se tem poucos dados pode ser conveniente digitá-los. Os exemplos a seguir ilustram a entrada de dados de variáveis qualitativa e quantitativa. Os exemplos utilizados são do livro de Anderson, David R.
+
+##### Exemplo: variável qualitativa 
+
+```r 
+# Comandos de Entrada para ler os dados de uma variável qualitativa e armazená-los em ex1  
+
+ex1 <- c("Coke Classic","Diet Coke","Pepsi","Diet Coke",
+"Coke Classic","Coke Classic","Dr. Pepper","Diet Coke",
+"Pepsi","Pepsi","Coke Classic","Dr. Pepper","Sprite","Coke Classic",
+"Diet Coke","Coke Classic","Coke Classic","Sprite","Coke Classic","Diet Coke",
+"Coke Classic","Diet Coke","Coke Classic",
+"Sprite","Pepsi","Coke Classic","Coke Classic","Coke Classic",
+"Pepsi","Coke Classic","Sprite","Dr. Pepper",
+"Pepsi","Diet Coke","Pepsi","Coke Classic","Coke Classic",
+"Coke Classic","Pepsi","Dr. Pepper","Coke Classic","Diet Coke",
+"Pepsi","Pepsi","Pepsi","Pepsi","Coke Classic","Dr. Pepper","Pepsi","Sprite")
+
+ex1 # para visualizar os dados
+
 ```
 
-And ensure your current version is at least as high as:
-```r
-> hugo_version()
-[1] ‘0.79.0’
+
+##### Exemplos: variável quantitativa 
+
+```r 
+ex2 <- c(2, 5, 10, 12, 4, 4, 5, 17, 11, 8, 9, 8, 12, 21, 6, 8, 7, 13, 18, 3) # tempo de espera em minutos de pacientes
+
+ex2 # para visualizar os dados
+
+x<- c(2, 5, 1, 3, 4, 1, 5, 3, 4, 2)  # número de comerciais
+
+y<- c(50, 57, 41, 54, 54, 38, 63, 48, 59, 46)  # valores vendas (em milhares de reais)
+
+x;y # para visualizar os dados
+
 ```
 
-## Check pandoc
 
-The RStudio IDE bundles an updated version of pandoc- if you did install v1.4 of the IDE, you should be all set!
-
-```r
-> rmarkdown::pandoc_version()
-[1] ‘2.11.3’
-```
