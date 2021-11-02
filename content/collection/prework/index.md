@@ -6,6 +6,8 @@ subtitle: ""
 title: Introdução ao R
 weight: 1
 ---
+
+
 Todas as análises de dados estão sendo realizadas usando o R e o RStudio. 
 
 O R é um software livre e de código aberto com uma imensa comunidade de desenvolvedores e usuários nacionais e internacionais e cresce muito rapidamente. Dessa forma, há muito material disponível com exemplos em R. Assim sendo, com pequenas modificações em códigos prontos disponíveis é possível, por exemplo, realizar análises gráficas, ajustar modelos de previsão, criar aplicativos web, sites e muito mais. 
@@ -69,7 +71,7 @@ Algumas vezes quando se tem poucos dados pode ser conveniente digitá-los. Os ex
 
 ##### Exemplo: variável qualitativa 
 
-```r 
+```{r, echo=TRUE}
 # Comandos de Entrada para ler os dados de uma variável qualitativa e armazená-los em ex1  
 
 ex1 <- c("Coke Classic","Diet Coke","Pepsi","Diet Coke",
@@ -198,3 +200,9 @@ respostas
 
 
 ###### **OBSERVAÇÃO:** Para que o R acesse o arquivo sem precisar especificar o caminho "C:/Pasta1/Subpasta1/Nome_Arquivo", ou seja, usando apenas o nome, basta salvar o código do R e o arquivo csv numa mesma pasta. 
+
+## Brush up on markdown
+
+Please complete this [10-minute interactive tutorial on Markdown](https://commonmark.org/help/tutorial/). 
+
+
