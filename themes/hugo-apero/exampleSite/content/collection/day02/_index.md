@@ -16,10 +16,7 @@ show_author_byline: false
 show_post_date: false
 ---
 
-If you choose `layout: single-series`, you can add markdown text here and it will be the landing page for this nested subsection.
-
-slide1
-Olá, o meu nome é Luzia, sou professora pesquisadora do Instituto de Ciência e Tecnologia da Universidade Federal de São Paulo. Essa é a apresentação do artigo completo intitulado Atividades Didáticas Individuais com Feedback Automático no Moodle Usando o Pacote “exams” do R que encontra-se disponível nos anais do oitavo SIPEM (Seminário Internacional de Pesquisa em Educação Matemática). O artigo foi feito em conjunto com a Denise professora pesquisadora da PUC CAMPINAS.
+If you choose `layout: single-series`, you can add markdown text here and it will be the landing page for this nested subsection. slide1 Olá, o meu nome é Luzia, sou professora pesquisadora do Instituto de Ciência e Tecnologia da Universidade Federal de São Paulo. Essa é a apresentação do artigo completo intitulado Atividades Didáticas Individuais com Feedback Automático no Moodle Usando o Pacote “exams” do R que encontra-se disponível nos anais do oitavo SIPEM (Seminário Internacional de Pesquisa em Educação Matemática). O artigo foi feito em conjunto com a Denise professora pesquisadora da PUC CAMPINAS.
 
 slide2
 Com relação as etapas dessa apresentação, iniciamos com a motivação e o objetivo do trabalho, seguido por uma breve descrição do referencial teórico utilizado. São apresentados o passo a passo para a elaboração de uma atividade e alguns pontos positivos do método para o processo de ensino e aprendizagem do estudante.
