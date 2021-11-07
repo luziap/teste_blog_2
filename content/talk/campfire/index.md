@@ -7,7 +7,7 @@ date_end: "2021-10-15"
 draft: false
 event: Congresso Movimentos Docentes 2021
 event_url: https://www.movimentosdocentes.com/enmd-2021
-excerpt: Este é o artigo completo e a apresentação submetidos ao Congresso Movimentos Docentes 2021.
+excerpt: O ensino remoto emergencial, ocasionado pela pandemia do SARS-COV-2, impulsionou o repensar das práticas pedagógicas apoiadas nas tecnologias digitais. Uma etapa importante para o aprimoramento do processo de ensino e aprendizagem é a escolha de tecnologias que possibilitem aumentar o engajamento do estudante, favorecer a autorregulação de sua aprendizagem e facilitar o acompanhamento continuado do desempenho dos estudantes. Neste sentido, este trabalho visa apresentar alguns exemplos de atividades individuais com feedback automático e múltiplas tentativas pelo Moodle, gerados com o pacote “exams” do software R. As atividades destacadas sobre os conteúdos de cônicas foram propostas em uma turma de reoferecimento de Geometria Analítica durante o ensino remoto emergencial em uma Universidade Federal do Estado de São Paulo.
 featured: true
 layout: single
 links:
