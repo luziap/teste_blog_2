@@ -1,28 +1,28 @@
 ---
 author: Luzia Pedroso de Oliveira
 categories:
-- workshop
+- Artigos 
 date: "2021-10-16"
 date_end: "2021-10-15"
 draft: false
-event: Congresso Movimentos Docentes(2021)
+event: Congresso Movimentos Docentes 2021
 event_url: https://www.movimentosdocentes.com/21apresentacoes
-excerpt: Esta é a apresentação do artigo completo submetido ao Congresso Movimentos Docentes 2021.
+excerpt: Este é o artigo completo e apresentação submetidos ao Congresso Movimentos Docentes 2021.
 featured: true
 layout: single
 links:
 - icon: door-open
   icon_pack: fas
-  name: website
-  url: https://www.youtube.com/watch?v=SOSVebUD9gg&t=2s
+  name: apresentação
+  url: https://www.youtube.com/watch?v=SOSVebUD9gg&t=2s/
 - icon: github
   icon_pack: fab
-  name: code
-  url: https://github.com/apreshill/bakeoff
-location: remoto
+  name: artigo
+  url: https://www.movimentosdocentes.com/21anais
+location: Online
 show_post_time: false
-subtitle: Artigo completo nos anais do evento
+subtitle: 
 title: R/EXAMS COMO FERRAMENTA DE APOIO AO ENSINO REMOTO - UM ENFOQUE NO ENSINO E PRENDIZAGEM DE CÔNICAS
 ---
 
-I'm really excited to give this talk! Stay tuned for video and slides.
+
