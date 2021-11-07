@@ -1,28 +1,28 @@
 ---
-author: Alison Hill
+author: Luzia Pedroso de Oliveira
 categories:
 - workshop
-date: "2021-01-12"
-date_end: "2021-01-13"
+date: "2021-10-16"
+date_end: "2021-10-15"
 draft: false
-event: rstudio::global(2021)
+event: Congresso Movimentos Docentes(2021)
 event_url: https://www.movimentosdocentes.com/21apresentacoes
-excerpt: Esta é a apresentação do artigo completo submetido ao .
+excerpt: Esta é a apresentação do artigo completo submetido ao Congresso Movimentos Docentes 2021.
 featured: true
 layout: single
 links:
 - icon: door-open
   icon_pack: fas
   name: website
-  url: https://www.youtube.com/results?search_query=r%2Fexams+como+ferramenta+de+apoio+ao+ensino+remoto%3A+um+enfoque+no+ensino+e+aprendizagem+de+c%C3%B4nicas/
+  url: https://www.youtube.com/watch?v=SOSVebUD9gg&t=2s
 - icon: github
   icon_pack: fab
   name: code
   url: https://github.com/apreshill/bakeoff
-location: Sydney, Australia
+location: remoto
 show_post_time: false
-subtitle: Testing
-title: R EXAMS COMO FERRAMENTA DE APOIO AO ENSINO REMOTO UM ENFOQUE NO ENSINO E PRENDIZAGEM DE CÔNICAS
+subtitle: Artigo completo nos anais do evento
+title: R/EXAMS COMO FERRAMENTA DE APOIO AO ENSINO REMOTO - UM ENFOQUE NO ENSINO E PRENDIZAGEM DE CÔNICAS
 ---
 
 I'm really excited to give this talk! Stay tuned for video and slides.
