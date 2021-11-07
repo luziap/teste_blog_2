@@ -1,4 +1,10 @@
 ---
+
+---
+
+<!---
+
+---
 date: "2021-01-02"
 draft: false
 excerpt: Grid is the very first CSS module created specifically to solve the layout
@@ -21,9 +27,7 @@ Restart your R session. If you use RStudio, use the menu item *Session \> Restar
 -   <kbd>Ctrl + Shift + F10</kbd> (Windows and Linux) or
 -   <kbd>Command + Shift + F10<kbd> (Mac OS).
 
-```{=html}
-<!-- -->
-```
+
     packageVersion("distill")
     [1] ‘1.2’
 
@@ -139,3 +143,6 @@ Medium:
 ● Branch: 'main'
 ● Path: '/docs'
 ```
+
+
+-->

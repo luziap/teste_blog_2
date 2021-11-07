@@ -1,4 +1,9 @@
 ---
+
+---
+
+<!---
+
 date: "2021-01-01"
 excerpt: Grid is the very first CSS module created specifically to solve the layout
   problems we’ve all been hacking our way around for as long as we’ve been making
@@ -6,8 +11,6 @@ excerpt: Grid is the very first CSS module created specifically to solve the lay
 subtitle: ""
 title: Using blogdown
 weight: 2
----
-
 
 ## Pre-requisites
 
@@ -66,3 +69,4 @@ new_site(dir = ".", theme = "apreshill/blogophonic")
 The first stop on this tour of your site is the `config.yaml` file.
 
 
+-->

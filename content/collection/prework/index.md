@@ -1,14 +1,15 @@
+
 ---
 date: "2021-01-01"
 draft: false
-excerpt: How to prepare ahead of time.
+excerpt: 
 subtitle: ""
-title: Introdução ao R
-weight: 1
+title: Em construção
+weight: 4
 ---
+<!---
 
-
-Todas as análises de dados estão sendo realizadas usando o R e o RStudio. 
+Todas as análises de dados neste site foram realizadas usando o R e o RStudio. 
 
 O R é um software livre e de código aberto com uma imensa comunidade de desenvolvedores e usuários nacionais e internacionais e cresce muito rapidamente. Dessa forma, há muito material disponível com exemplos em R. Assim sendo, com pequenas modificações em códigos prontos disponíveis é possível, por exemplo, realizar análises gráficas, ajustar modelos de previsão, criar aplicativos web, sites e muito mais. 
 O RStudio é uma plataforma integrada ao R e oferece vários recursos que facilitam a importação, a edição dos comandos e a visualização dos resultados obtidos. 
@@ -206,3 +207,4 @@ respostas
 Please complete this [10-minute interactive tutorial on Markdown](https://commonmark.org/help/tutorial/). 
 
 
+-->
