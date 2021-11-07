@@ -7,7 +7,7 @@ date_end: "2021-10-15"
 draft: false
 event: Congresso Movimentos Docentes 2021
 event_url: https://www.movimentosdocentes.com/enmd-2021
-excerpt: Este é o artigo completo e apresentação submetidos ao Congresso Movimentos Docentes 2021.
+excerpt: Este é o artigo completo e a apresentação submetidos ao Congresso Movimentos Docentes 2021.
 featured: true
 layout: single
 links:
@@ -16,7 +16,7 @@ links:
   name: apresentação
   url: https://www.youtube.com/watch?v=SOSVebUD9gg&t=2s/
 - icon: door-open
-  icon_pack: fab
+  icon_pack: fas
   name: artigo
   url: https://www.movimentosdocentes.com/21anais
 location: Online
